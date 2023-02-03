@@ -179,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* These next two CSS rules control the style of the icon bar */
 .navbar_coca_cola .navbar-toggler {
+    outline: none !important;
     border-color: white;
 }
 
@@ -186,24 +187,36 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+/* Change .dropdown-menu class */
 .dropdown-menu {
-    text-align: -webkit-left;
+    /* text-align: -webkit-left; */
+    text-align: -webkit-center;
     background-color: #b6e7f3;
     margin-top: 20px; /* Experiment to move the dropdown menu down */
 }
 
 .dropdown-menu .dropdown-item {
-    color: #eb0025;
+    /* color: #eb0025; */
+    box-sizing: border-box;
+    color: #760003;
+    border-bottom: #b6e7f3 2px solid;
+
 }
 
 .dropdown-menu .dropdown-item:hover {
-    color: #030303;
-    background-color: #e98074;
+    /* color: #030303; */
+    /* background-color: #e98074; */
+    box-sizing: border-box;
+    font-weight: 800;
+    color: #d92f32;
+    background-color: #91cddd;
+    border-bottom: #5297f7 2px solid;
+    border-radius: 5px;
 }
 
 .footer {
     color: #030303;
-    background-color: #760003; /* Set navbar footer background color same as header */
+    background-color: #631622; /* Set navbar footer background color same as header */
     height: 50px;
 }
 
@@ -272,4 +285,3 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 7px;
     }
     }
-    
